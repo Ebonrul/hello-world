@@ -13,7 +13,7 @@
 }
 body {
     overflow-x: hidden;
-    background: "/img/downtown.jpg";
+    background: "../img/downtown.jpg";
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -30,7 +30,9 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 background: #fff;
-box-shadow: 0 0 4px rgba(0,0,0,.15), 0  4px 5px rgba(0,0,0,.3);
+box-shadow: 
+    0 0 4px rgba(0,0,0,.15), 
+    0  4px 5px rgba(0,0,0,.3);
 height: 69px;
 z-index: 10;
 position: relative;
@@ -49,7 +51,7 @@ header .logo h1 {
 header .nav {
     position: relative;
     border-left: 1px solid #e9e9e9;
-    display: ;
+
 }
 header .nav ul {
     display: flex;
@@ -80,4 +82,26 @@ header .nav ul li:hover {
     color: #797979;
     cursor: pointer;
     font-size: 1.6em;
+}
+.nav-mobile {
+    display: none;
+}
+aside {
+    position: relative;
+    top: 1px;
+    box-shadow: 
+        0 0 4px rgba(0, 0, 0, .15),
+        0 4px 5px rgba(0, 0, 0, .3);
+    width: 270px;
+    height: 100%;
+    z-index: 10;
+    float: left;
+    background: #fff;
+    font-family: 'Poppins', sans-serif;
+    overflow: auto;
+}
+aside h1 {
+    padding: 20px;
+    text-transform: uppercase;
+    color: var (var--t-color);
 }
