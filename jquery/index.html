@@ -18,21 +18,121 @@
             </div>
             <div class="nav">
             <ul>
-            <li>
-                <h3> Home </h3>
+            <li class="active">
+                <h3>Home</h3>
             </li>
             <li>
-                <h3> About </h3>
+                <h3>About</h3>
             </li>
             <li>
-                <h3> Projects </h3>
+                <h3>Projects</h3>
             </li>
             <li>
-                <h3 class="active"> Contact </h3>
+                <h3>Contact</h3>
             </li>
         </ul>
     </div>
         </header>
+        <div class="nav-mobile">
+            <ul>
+            <li class="active">
+                <span><i class="fas fa-home"></i></span>
+                <h3>Home</h3>
+            </li>
+            <li>
+                <span><i class="fas fa-address-card"></i></span>
+                <h3>About</h3>
+            </li>
+            <li>
+                <span><i class="fas fa-laptop-code"></i></i></span>
+                <h3>Projects</h3>
+            </li>
+            <li>
+                <span><i class="fas fa-phone-square-alt"></i></span>
+                <h3>Contact</h3>
+            </li>
+            </ul>
+        </div>
+        <div class="m-bar">
+            <span><i class="fas fa-ellipsis-v"></i></span>
+        </div>
+        <aside class="sidebar">
+            <h1>Sidebar <span><i class="fas fa-times"></i></span></h1>
+            <div class="profile-side">
+                <div class="profile-pic">
+                    <img width="100" src="img/profile.jpg" alt="my profile pic">
+                </div>
+                <div class="profile-info">
+                    <span class="name">Scott Banks</span>
+                    <span class="mail">somebody@gmail.com</span>
+                    <span class="status">Online</span>
+                </div>
+            </div>
+            <div class="search">
+                <form>
+                    <div class="row">
+                        <input type="text" placeholder="Search Portfolio...">
+                        <button type="submit"><span><i class="fas fa-search"></i>
+                        </span></button>
+                    </div>
+                </form>
+            </div>
+            <div class="side-nav">
+                <h2>General</h2>
+                <nav>
+                    <ul>
+                        <li class="active" onclick="show(0)">
+                            <span><i class="fas fa-tachometer"></i></span>
+                            <h3>Dashboard</h3>
+                        </li>
+                        <li onclick="show(1)">
+                            <span><i class="fas fa-star"></i></span>
+                            <h3>Reviews</h3>
+                        </li>
+                        <li onclick="show(2)">
+                            <span><i class="fas fa-comments"></i></span>
+                            <h3>Comments</h3>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="bt-nav">
+                <ul>
+                    <li class="alert" title="Alert">
+                        <span><i class="fas fa-bell"></i></span>
+                    </li>
+                    <li class="message" title="Message">
+                        <span><i class="fas fa-envelope"></i></span>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     </div>
     <div class="bars">
         <script src="jquery/jquery.js"></script>
