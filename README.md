@@ -2,7 +2,7 @@
 Let's take another stab at the "portfolio website" shall we?
 
 ## What
-_The good-old portfiolio website
+_The good-old portfiolio website_
 
 ## Why
 _It's time that this "starter project" better reflected what I'm capable of._
