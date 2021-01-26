@@ -10,3 +10,5 @@ _It's time that this "starter project" better reflected what I'm capable of._
 ## How
 _Using HTML, CSS, JavaScript, and jQuery to update my portfolio and showcase the 'basics'._
 
+
+  Real talk, the website I kicked twitching and dry-heaving into existence back when I started this journey is now painfully inadequate.
