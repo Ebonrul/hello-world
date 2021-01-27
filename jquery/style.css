@@ -268,3 +268,11 @@ aside .search button {
 .m-bar {
     display: none;
 }
+/* The MAIN section */
+.main section{
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+    display: "none";
+}

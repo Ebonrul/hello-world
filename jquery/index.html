@@ -82,19 +82,19 @@
                 <h2>Whaddup doe...</h2>
                 <nav>
                     <ul>
-                        <li class="active" onclick="show(0)">
+                        <li onclick=show(0)>
                             <span><i class="fas fa-tachometer-alt"></i></span>
                             <h3>Dashboard</h3>
                         </li>
-                        <li onclick="show(1)">
+                        <li onclick=show(1)>
                             <span><i class="fas fa-star"></i></span>
                             <h3>Announcements</h3>
                         </li>
-                        <li onclick="show(2)">
+                        <li onclick=show(2)>
                             <span><i class="fas fa-laptop-code"></i></span>
                             <h3>Features</h3>
                         </li>
-                        <li onclick="show(3)">
+                        <li onclick=show(3)>
                             <span><i class="fas fa-comments"></i></span>
                             <h3>Reviews</h3>
                         </li>
@@ -152,15 +152,15 @@
 
 
 
-            <section>
+            <section class="tabs">
                 <h1>Announcements</h1>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae voluptatibus eveniet, similique quisquam nulla cupiditate natus. Illo itaque nihil debitis, ducimus odio ab ut dolor officia laborum, error voluptate quos!</p>
             </section>
-            <section>
+            <section class="tabs">
                 <h1>Features</h1>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae voluptatibus eveniet, similique quisquam nulla cupiditate natus. Illo itaque nihil debitis, ducimus odio ab ut dolor officia laborum, error voluptate quos!</p>
             </section>
-            <section>
+            <section class="tabs">
                 <h1>Reviews</h1>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae voluptatibus eveniet, similique quisquam nulla cupiditate natus. Illo itaque nihil debitis, ducimus odio ab ut dolor officia laborum, error voluptate quos!</p>
             </section>
@@ -192,6 +192,22 @@
     </div>
     <div class="bars">
         <script src="jquery/jquery.js"></script>
+        <script>
+            const tbtn = document.querySelectorAll(".side-nav ul li");
+            const tab = document.querySelectorAll(".tabs");
+            function show(panelIndex) {
+                tab.forEach(function(node) {
+                    node.style.display = "none";
+                })
+                tab[panelIndex].style.display = "block";
+            }
+            show(0)
+        </script>
+        <script>
+            $(".side-nav ul li").click(function() {
+                $(this).addClass("active").siblings().removeClass("active");
+            });
+        </script>
     </div>
 </body>
 </html>
