@@ -82,19 +82,19 @@
                 <h2>Whaddup doe...</h2>
                 <nav>
                     <ul>
-                        <li onclick=show(0)>
+                        <li class="none" onclick=show(0)>
                             <span><i class="fas fa-tachometer-alt"></i></span>
                             <h3>Dashboard</h3>
                         </li>
-                        <li onclick=show(1)>
+                        <li class="none" onclick=show(1)>
                             <span><i class="fas fa-star"></i></span>
                             <h3>Announcements</h3>
                         </li>
-                        <li onclick=show(2)>
+                        <li class="none" onclick=show(2)>
                             <span><i class="fas fa-laptop-code"></i></span>
                             <h3>Features</h3>
                         </li>
-                        <li onclick=show(3)>
+                        <li class="none" onclick=show(3)>
                             <span><i class="fas fa-comments"></i></span>
                             <h3>Reviews</h3>
                         </li>
@@ -141,11 +141,6 @@
                         <p>Title or Name</p>
                         <span><i class="fas fa-plus"></i></span>
                     </div>
-                    <div class="posts">
-                        <img width="200" src="/img/bg3.jpg" alt="">
-                        <p>Title or Name</p>
-                        <span><i class="fas fa-plus"></i></span>
-                    </div>
                 </div>
                 <div></div>
             </section>
@@ -154,15 +149,15 @@
 
             <section class="tabs">
                 <h1>Announcements</h1>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae voluptatibus eveniet, similique quisquam nulla cupiditate natus. Illo itaque nihil debitis, ducimus odio ab ut dolor officia laborum, error voluptate quos!</p>
+                <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae voluptatibus eveniet, similique quisquam nulla cupiditate natus. Illo itaque nihil debitis, ducimus odio ab ut dolor officia laborum, error voluptate quos!</p>
             </section>
             <section class="tabs">
                 <h1>Features</h1>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae voluptatibus eveniet, similique quisquam nulla cupiditate natus. Illo itaque nihil debitis, ducimus odio ab ut dolor officia laborum, error voluptate quos!</p>
+                <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae voluptatibus eveniet, similique quisquam nulla cupiditate natus. Illo itaque nihil debitis, ducimus odio ab ut dolor officia laborum, error voluptate quos!</p>
             </section>
             <section class="tabs">
                 <h1>Reviews</h1>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae voluptatibus eveniet, similique quisquam nulla cupiditate natus. Illo itaque nihil debitis, ducimus odio ab ut dolor officia laborum, error voluptate quos!</p>
+                <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae voluptatibus eveniet, similique quisquam nulla cupiditate natus. Illo itaque nihil debitis, ducimus odio ab ut dolor officia laborum, error voluptate quos!</p>
             </section>
         </div>
 
@@ -207,6 +202,13 @@
             $(".side-nav ul li").click(function() {
                 $(this).addClass("active").siblings().removeClass("active");
             });
+        </script>
+        <script>
+            const bar = document.querySelector(".bars");
+            const navMobile = document.querySelector(".nav-mobile");
+            bar.addEventListener("click", (nav)=> {
+                navMobile.classList.toggle("show");
+            })
         </script>
     </div>
 </body>
