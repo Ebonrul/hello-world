@@ -24,7 +24,7 @@ ul, li {
 a {
     text-decoration: none;
 }
-
+/* The top navigation and slide-out menu */
 header {
 display: flex;
 justify-content: space-between;
@@ -190,4 +190,81 @@ aside .search button {
     outline: none;
     cursor: pointer;
     border-left: 0;
+}
+/* The side navigation */
+.side-nav {
+    border-top: 1px solid #e9e9e9;
+    padding: 20px 0;
+    padding-bottom: 10px;
+    margin-bottom: 40px;
+}
+.side-nav h2 {
+    font-size: 1.2em;
+    padding: 10px 0px 5px 20px;
+    color : var(--t-color);
+    margin-bottom: 10px;
+}
+.side-nav ul li {
+    display: flex;
+    width: 100%;
+    position: relative;
+    padding: 8px 0px 8px 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all .4s ease;
+}
+.side-nav ul li.active,
+.side-nav ul li:hover {
+    background: #eee;
+}
+.side-nav ul li span {
+    margin-right: 10px;
+    font-size: 12px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 4px;
+    background: var(--color);
+    color: #fff;
+}
+.side-nav ul li h3 {
+    line-height: 30px;
+    font-size: 1.2em;
+    color: var(--t-color);
+    font-weight: 100;
+}
+/* The Bottom Navigation */
+.bt-nav {
+    background: var(--t-color);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.bt-nav ul {
+    display: flex;
+    justify-content: space-around;
+}
+.bt-nav ul li {
+    line-height: 30px;
+    position: relative;
+    color: #fff;
+    cursor: pointer;
+}
+.mycode::after,
+.message::after,
+.linkedin::after {
+    content: '';
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    top: 2px;
+    background: red;
+}
+.message::after {
+    background: lightgreen;
+}
+.m-bar {
+    display: none;
 }
