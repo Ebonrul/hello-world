@@ -18,11 +18,6 @@ _Using HTML, CSS, JavaScript, and jQuery to update my portfolio and showcase the
   
   
   
-  ### devlog
-
-Day 0: Put up a [wireframe](https://gist.github.com/Ebonrul/68c6f0a72121c2c3edf3ff3f6c87155a) that pretty much sums up what I'm going for. 
-- Skipping this step has brought past projects to a grinding halt so here's to proving he can be taught.
-Day 1: Got functionality up on the main page.
-- Buttons do what they're supposed to do and navigate where they're supposed to go...for the most part.
-Day 1.5: Cleanup
-- Gotta pause to work on other assignments, but this is sitting in a pretty good place.  I could use chunks of it in other stuff right away.
+  ### [Developers Log](https://gist.github.com/Ebonrul/68c6f0a72121c2c3edf3ff3f6c87155a)
+  
+  # Got a stable version up in a couple days.  Not where I want it to be, but not a bad start.
