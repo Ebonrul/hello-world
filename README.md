@@ -24,3 +24,5 @@ Day 0: Put up a [wireframe](https://gist.github.com/Ebonrul/68c6f0a72121c2c3edf3
 - Skipping this step has brought past projects to a grinding halt so here's to proving he can be taught.
 Day 1: Got functionality up on the main page.
 - Buttons do what they're supposed to do and navigate where they're supposed to go...for the most part.
+Day 1.5: Cleanup
+- Gotta pause to work on other assignments, but this is sitting in a pretty good place.  I could use chunks of it in other stuff right away.
